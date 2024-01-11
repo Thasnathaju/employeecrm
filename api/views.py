@@ -84,7 +84,7 @@ class TaskViewSetView(viewsets.ViewSet):
     def destroy(self,request,*args,**kwargs):
         id=kwargs.get("pk")
         Tasks.objects.get(id=id).delete()
-        return Response(data={"message":"deleted"})
+        return Response(data={"message":"delete"})
 
 
 
